@@ -1,4 +1,4 @@
-# flutter_explore
+# tugas_1_slicing
 
 A new Flutter project.
 
