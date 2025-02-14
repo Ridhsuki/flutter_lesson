@@ -1,12 +1,14 @@
 # 🚀 Flutter Task Repository  
 
-This repository contains various Flutter tasks assigned as part of my learning journey. Each task is organized into separate project folders, and the results of each task are documented with screenshots.  
+This repository contains Flutter tasks given by [Mr. Faiz](https://github.com/abdillahfaiz) as my mentor in TRPL D class. Each task is organized into a separate project folder, and the results of each task are documented with screenshots.
 
 ## 📂 Folder Structure  
 ```
-├── Tugas_Slicing/       # First Flutter project
-├── result/              # Folder containing screenshots of task results
-│   ├── outputTugasSlicing.png
+├── tugas_flutter_1 /    # Flutter project tasks
+├── tugas_flutter_2 /    # Flutter project tasks
+├── tugas_flutter_3 /    # Flutter project tasks
+├── Result/              # Folder containing screenshots of task results
+│   ├── screenshoot...
 ├── README.md            # Documentation
 ```
 
