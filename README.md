@@ -1,6 +1,6 @@
 # 🚀 Flutter Task Repository  
 
-This repository contains Flutter tasks given by [Mr. Faiz](https://github.com/abdillahfaiz) as my mentor in TRPL D class. Each task is organized into a separate project folder, and the results of each task are documented with screenshots.
+This repository contains Flutter tasks given by [@abdillahfaiz](https://github.com/abdillahfaiz) as my mentor in TRPL D class. Each task is organized into a separate project folder, and the results of each task are documented with screenshots.
 
 ## 📂 Folder Structure  
 ```
