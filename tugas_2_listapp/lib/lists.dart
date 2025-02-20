@@ -16,13 +16,14 @@ class _ListsPageState extends State<ListsPage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Icon(
-              Icons.arrow_back_ios_new_outlined,
-              color: Colors.white,
-            )),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(
+            Icons.arrow_back_ios_new_outlined,
+            color: Colors.white,
+          ),
+        ),
         title: Text(
           'Lists Page',
           style: TextStyle(color: Colors.white),
@@ -86,51 +87,52 @@ class _ListsPageState extends State<ListsPage> {
             ),
             Expanded(
               child: ListView.builder(
-                  itemCount: data.length,
-                  itemBuilder: (context, index) {
-                    return ListTile(
-                      onTap: () {},
-                      trailing: IconButton(
-                          onPressed: () {
-                            setState(
-                              () {
-                                data.remove(data[index]);
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  SnackBar(
-                                    backgroundColor: Colors.red,
-                                    behavior: SnackBarBehavior.floating,
-                                    content: Text(
-                                      'berhasil di di hapus',
-                                      style: TextStyle(color: Colors.white),
-                                    ),
-                                  ),
-                                );
-                              },
-                            );
-                          },
-                          icon: Icon(
-                            Icons.delete_rounded,
-                            color: Colors.red,
-                            size: 30.0,
-                          )),
-                      leading: IconButton(
+                itemCount: data.length,
+                itemBuilder: (context, index) {
+                  return ListTile(
+                    onTap: () {},
+                    trailing: IconButton(
                         onPressed: () {
-                          Navigator.pushNamed(context, '/list-detail');
+                          setState(
+                            () {
+                              data.remove(data[index]);
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  backgroundColor: Colors.red,
+                                  behavior: SnackBarBehavior.floating,
+                                  content: Text(
+                                    'berhasil di di hapus',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ),
+                              );
+                            },
+                          );
                         },
                         icon: Icon(
-                          Icons.arrow_right_alt_outlined,
-                          color: Colors.blueAccent,
-                          size: 30,
-                        ),
+                          Icons.delete_rounded,
+                          color: Colors.red,
+                          size: 30.0,
+                        )),
+                    leading: IconButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/list-detail');
+                      },
+                      icon: Icon(
+                        Icons.arrow_right_alt_outlined,
+                        color: Colors.blueAccent,
+                        size: 30,
                       ),
-                      title: Text(
-                        data[index],
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      ),
-                      subtitle: Text('Descriptions'),
-                    );
-                  }),
+                    ),
+                    title: Text(
+                      data[index],
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                    subtitle: Text('Descriptions'),
+                  );
+                },
+              ),
             )
           ],
         ),
