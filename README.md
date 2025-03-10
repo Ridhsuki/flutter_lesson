@@ -15,16 +15,16 @@ This repository contains Flutter tasks given by [@abdillahfaiz](https://github.c
 ## 📷 Output:
 
 <p align="center">
-    <img src="Result/layouting-level-1.png" alt="Layouting Task level 1" width="300" style="margin: 10px;">
-    <img src="Result/layouting-level-2.png" alt="Layouting Task level 2" width="300" style="margin: 10px;">
-    <img src="Result/layouting-level-3.png" alt="Layouting Task level 3" width="300" style="margin: 10px;">
-    <img src="Result/outputTugasSlicing.png" alt="Tugas Slicing" width="900" style="margin: 10px;">
-    <img src="Result/listapp1.png" alt="Tugas listapp" width="300" style="margin: 10px;">
-    <img src="Result/listapp2.png" alt="Tugas listapp" width="300" style="margin: 10px;">
-    <img src="Result/listapp3.png" alt="Tugas listapp" width="300" style="margin: 10px;">
-    <img src="Result/listapp4.png" alt="Tugas listapp" width="300" style="margin: 10px;">
-    <img src="Result/fetchapi1.png" alt="Tugas fetch API" width="300" style="margin: 10px;">
-    <img src="Result/fetchapi2.png" alt="Tugas fetch API" width="300" style="margin: 10px;">
+    <img src="Result/layouting-level-1.png" alt="Layouting Task level 1" height="360" style="margin: 10px;">
+    <img src="Result/layouting-level-2.png" alt="Layouting Task level 2" height="360" style="margin: 10px;">
+    <img src="Result/layouting-level-3.png" alt="Layouting Task level 3" height="360" style="margin: 10px;">
+    <img src="Result/outputTugasSlicing.png" alt="Tugas Slicing" width="700" style="margin: 10px;">
+    <img src="Result/listapp1.png" alt="Tugas listapp" height="360" style="margin: 10px;">
+    <img src="Result/listapp2.png" alt="Tugas listapp" height="360" style="margin: 10px;">
+    <img src="Result/listapp3.png" alt="Tugas listapp" height="360" style="margin: 10px;">
+    <img src="Result/listapp4.png" alt="Tugas listapp" height="360" style="margin: 10px;">
+    <img src="Result/fetchapi1.png" alt="Tugas fetch API" height="360" style="margin: 10px;">
+    <img src="Result/fetchapi2.png" alt="Tugas fetch API" height="360" style="margin: 10px;">
 </p>
 
 
