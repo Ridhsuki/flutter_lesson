@@ -1,0 +1,2 @@
+C:/Users/Thinkpad/Documents/Flutter/flutter_lesson/android/app/.cxx/Debug/5f3c86s1/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/Thinkpad/Documents/Flutter/flutter_lesson/android/app/.cxx/Debug/5f3c86s1/armeabi-v7a/CMakeFiles/rebuild_cache.dir
