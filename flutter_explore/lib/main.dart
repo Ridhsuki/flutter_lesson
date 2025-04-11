@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_explore/counter/ui/counter_screen.dart';
-import 'package:flutter_explore/core/slicing_1.dart';
+import 'package:flutter_explore/slicing/slicing_1.dart';
 import 'package:flutter_explore/signup%20&%20welcome/provider/welcome_provider.dart';
 import 'package:flutter_explore/signup%20&%20welcome/ui/greeting_screen.dart';
 import 'package:flutter_explore/signup%20&%20welcome/ui/signup_screen.dart';
