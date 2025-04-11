@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_explore/counter/ui/counter_screen.dart';
-import 'package:flutter_explore/slicing/slicing_1.dart';
+import 'package:flutter_explore/z-experiments/like_state.dart';
+import 'package:flutter_explore/z-experiments/slicing_1.dart';
 import 'package:flutter_explore/signup%20&%20welcome/provider/welcome_provider.dart';
 import 'package:flutter_explore/signup%20&%20welcome/ui/greeting_screen.dart';
 import 'package:flutter_explore/signup%20&%20welcome/ui/signup_screen.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         '/counter': (context) => CounterScreen(),
         '/signup': (context) => SignupScreen(),
         '/greeting': (context) => GreetingScreen(),
+        '/like': (context) => LikeState(),
       },
     );
   }

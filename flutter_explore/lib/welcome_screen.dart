@@ -22,7 +22,8 @@ class WelcomeScreen extends StatelessWidget {
             WelcomeMenu(
                 route: '/counter', title: 'Counter (Provider Exeriments)'),
             WelcomeMenu(route: '/slicing', title: 'Slicing Challenge'),
-            WelcomeMenu(route: '/signup', title: 'Sign Up and Welcome')
+            WelcomeMenu(route: '/signup', title: 'Sign Up and Welcome'),
+            WelcomeMenu(route: '/like', title: 'Like'),
           ],
         ),
       ),
