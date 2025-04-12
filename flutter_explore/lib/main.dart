@@ -6,6 +6,7 @@ import 'package:flutter_explore/signup%20&%20welcome/provider/welcome_provider.d
 import 'package:flutter_explore/signup%20&%20welcome/ui/greeting_screen.dart';
 import 'package:flutter_explore/signup%20&%20welcome/ui/signup_screen.dart';
 import 'package:flutter_explore/welcome_screen.dart';
+import 'package:flutter_explore/z-experiments/toogle_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         '/signup': (context) => SignupScreen(),
         '/greeting': (context) => GreetingScreen(),
         '/like': (context) => LikeState(),
+        '/toogle': (context) => ToogleScreen(),
       },
     );
   }
