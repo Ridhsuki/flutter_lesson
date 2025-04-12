@@ -8,6 +8,14 @@ class ToogleScreen extends StatefulWidget {
 }
 
 class _ToogleScreenState extends State<ToogleScreen> {
+  bool isActive = true;
+
+  void actived() {
+    setState(() {
+      isActive = !isActive;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,8 +30,11 @@ class _ToogleScreenState extends State<ToogleScreen> {
         ),
       ),
       body: Center(
-        child: Text("Toogle"),
-      ),
+          child: Switch(
+              value: isActive,
+              onChanged: (value) {
+                actived();
+              })),
     );
   }
 }
