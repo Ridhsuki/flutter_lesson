@@ -20,16 +20,34 @@ void main() {
   );
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool isDarkMode = false;
+  void toDark() {
+    setState(() {
+      isDarkMode = !isDarkMode;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
+      themeMode: isDarkMode == true ? ThemeMode.dark : ThemeMode.light,
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => WelcomeScreen(),
+        '/': (context) => WelcomeScreen(
+              isDarkMode: isDarkMode,
+              onToggleTheme: toDark,
+            ),
         '/slicing': (context) => Slicing1(),
         '/counter': (context) => CounterScreen(),
         '/signup': (context) => SignupScreen(),
