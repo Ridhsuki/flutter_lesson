@@ -19,6 +19,7 @@ class _ToogleScreenState extends State<ToogleScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: isActive == true ? Colors.black : Colors.white,
       appBar: AppBar(
         title: Text('Toogle'),
         centerTitle: true,
