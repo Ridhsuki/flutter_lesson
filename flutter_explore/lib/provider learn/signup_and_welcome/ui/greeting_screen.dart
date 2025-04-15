@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_explore/signup%20&%20welcome/provider/welcome_provider.dart';
+import 'package:flutter_explore/provider%20learn/signup_and_welcome/provider/welcome_provider.dart';
 import 'package:provider/provider.dart';
 
 class GreetingScreen extends StatefulWidget {

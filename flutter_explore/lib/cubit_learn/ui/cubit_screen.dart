@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_explore/cubit%20learn/cubit/counter_cubit.dart';
-import 'package:flutter_explore/cubit%20learn/cubit/counter_state.dart';
+import 'package:flutter_explore/cubit_learn/cubit/counter_cubit/counter_cubit.dart';
+import 'package:flutter_explore/cubit_learn/cubit/counter_cubit/counter_state.dart';
 
 class CubitScreen extends StatefulWidget {
   const CubitScreen({super.key});

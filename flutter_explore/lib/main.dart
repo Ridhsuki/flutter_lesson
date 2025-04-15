@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_explore/counter/ui/counter_screen.dart';
-import 'package:flutter_explore/cubit%20learn/cubit/counter_cubit.dart';
-import 'package:flutter_explore/cubit%20learn/cubit_screen.dart';
-import 'package:flutter_explore/z-experiments/like_state.dart';
-import 'package:flutter_explore/z-experiments/slicing_1.dart';
-import 'package:flutter_explore/signup%20&%20welcome/provider/welcome_provider.dart';
-import 'package:flutter_explore/signup%20&%20welcome/ui/greeting_screen.dart';
-import 'package:flutter_explore/signup%20&%20welcome/ui/signup_screen.dart';
+import 'package:flutter_explore/provider%20learn/counter/ui/counter_screen.dart';
+import 'package:flutter_explore/cubit_learn/cubit/counter_cubit/counter_cubit.dart';
+import 'package:flutter_explore/cubit_learn/ui/cubit_screen.dart';
+import 'package:flutter_explore/z_experiments/like_state.dart';
+import 'package:flutter_explore/z_experiments/slicing_1.dart';
+import 'package:flutter_explore/provider%20learn/signup_and_welcome/provider/welcome_provider.dart';
+import 'package:flutter_explore/provider%20learn/signup_and_welcome/ui/greeting_screen.dart';
+import 'package:flutter_explore/provider%20learn/signup_and_welcome/ui/signup_screen.dart';
 import 'package:flutter_explore/welcome_screen.dart';
-import 'package:flutter_explore/z-experiments/toogle_screen.dart';
+import 'package:flutter_explore/z_experiments/toogle_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
