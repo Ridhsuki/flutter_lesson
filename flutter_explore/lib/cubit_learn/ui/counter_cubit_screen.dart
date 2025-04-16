@@ -3,14 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_explore/cubit_learn/cubit/counter_cubit/counter_cubit.dart';
 import 'package:flutter_explore/cubit_learn/cubit/counter_cubit/counter_state.dart';
 
-class CubitScreen extends StatefulWidget {
-  const CubitScreen({super.key});
+class CounterCubitScreen extends StatelessWidget {
+  const CounterCubitScreen({super.key});
 
-  @override
-  State<CubitScreen> createState() => _CubitScreenState();
-}
-
-class _CubitScreenState extends State<CubitScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,6 +62,18 @@ class _CubitScreenState extends State<CubitScreen> {
                   backgroundColor: Colors.redAccent,
                   child: Icon(
                     Icons.remove,
+                    color: Colors.black,
+                  ),
+                ),
+                const SizedBox(width: 20),
+                FloatingActionButton(
+                  heroTag: 'reset',
+                  onPressed: () {
+                    context.read<CounterCubit>().resetValue();
+                  },
+                  backgroundColor: Colors.orangeAccent,
+                  child: Icon(
+                    Icons.refresh,
                     color: Colors.black,
                   ),
                 ),

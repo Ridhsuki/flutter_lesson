@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_explore/cubit_learn/ui/notes_cubit_screen.dart';
 import 'package:flutter_explore/provider_learn/counter/ui/counter_screen.dart';
 import 'package:flutter_explore/cubit_learn/cubit/counter_cubit/counter_cubit.dart';
-import 'package:flutter_explore/cubit_learn/ui/cubit_screen.dart';
+import 'package:flutter_explore/cubit_learn/ui/counter_cubit_screen.dart';
 import 'package:flutter_explore/z_experiments/like_state.dart';
 import 'package:flutter_explore/z_experiments/slicing_1.dart';
 import 'package:flutter_explore/provider_learn/signup_and_welcome/provider/welcome_provider.dart';
@@ -60,7 +61,8 @@ class _MyAppState extends State<MyApp> {
         '/greeting': (context) => GreetingScreen(),
         '/like': (context) => LikeState(),
         '/toogle': (context) => ToogleScreen(),
-        '/counter-cubit': (context) => CubitScreen(),
+        '/counter-cubit': (context) => CounterCubitScreen(),
+        '/notes-cubit': (context) => NotesCubitScreen(),
       },
     );
   }

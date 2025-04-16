@@ -37,6 +37,7 @@ class WelcomeScreen extends StatelessWidget {
               WelcomeMenu(route: '/like', title: 'Like'),
               WelcomeMenu(route: '/toogle', title: 'Toogle'),
               WelcomeMenu(route: '/counter-cubit', title: 'Counter with Cubit'),
+              WelcomeMenu(route: '/notes-cubit', title: 'Notes with Cubit'),
             ],
           ),
         ),
