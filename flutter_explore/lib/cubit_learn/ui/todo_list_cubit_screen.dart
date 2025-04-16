@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class NotesCubitScreen extends StatelessWidget {
-  const NotesCubitScreen({super.key});
+class TodoListCubitScreen extends StatelessWidget {
+  const TodoListCubitScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
