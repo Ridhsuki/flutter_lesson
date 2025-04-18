@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_explore/api_integration_learn/ui/user_detail_screen.dart';
 import 'package:flutter_explore/cubit_learn/ui/todo_list_cubit_screen.dart';
 import 'package:flutter_explore/provider_learn/counter/ui/counter_screen.dart';
 import 'package:flutter_explore/cubit_learn/cubit/counter_cubit/counter_cubit.dart';
@@ -63,6 +64,7 @@ class _MyAppState extends State<MyApp> {
         '/toogle': (context) => ToogleScreen(),
         '/counter-cubit': (context) => CounterCubitScreen(),
         '/notes-cubit': (context) => TodoListCubitScreen(),
+        '/user-detail': (context) => UserDetailScreen(),
       },
     );
   }
