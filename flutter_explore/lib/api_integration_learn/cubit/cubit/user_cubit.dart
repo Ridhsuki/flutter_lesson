@@ -17,10 +17,10 @@ class UserCubit extends Cubit<UserState> {
     emit(state.copyWith(isLoading: false));
   }
  
-  Future<void> getDetailUser() async {
+  Future<void> getDetailUser(int id) async {
     emit(state.copyWith(isLoading: true));
 
-    var data = await UserService().getDetailUser();
+    var data = await UserService().getDetailUser(id);
     data.fold(
       (left) => emit(state.copyWith(error: left, isLoading: false)),
       (right) => emit(state.copyWith(detailUserData: right, isLoading: false)),

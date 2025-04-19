@@ -21,9 +21,9 @@ class UserService {
     }
   }
 
-  Future<Either<String, UserModel>> getDetailUser() async {
+  Future<Either<String, UserModel>> getDetailUser(int id) async {
     try {
-      var response = await dio.get('https://fakestoreapi.com/users/1');
+      var response = await dio.get('https://fakestoreapi.com/users/$id');
 
       if (response.statusCode == 200) {
         var data = UserModel.fromMap(response.data);

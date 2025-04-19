@@ -67,7 +67,8 @@ class _MyAppState extends State<MyApp> {
         '/notes-cubit': (context) => TodoListCubitScreen(),
         '/user': (context) => UsersScreen(),
         '/user-detail': (context) {
-          return UserDetailScreen();
+          final userId = ModalRoute.of(context)!.settings.arguments as int;
+          return UserDetailScreen(userId: userId,);
         },
       },
     );
