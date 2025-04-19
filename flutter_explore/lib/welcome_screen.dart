@@ -15,7 +15,8 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Experiments'),centerTitle: true,
+        title: Text('Flutter Experiments'),
+        centerTitle: true,
         actions: [
           Switch(
               value: isDarkMode,

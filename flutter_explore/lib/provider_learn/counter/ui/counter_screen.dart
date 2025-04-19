@@ -22,7 +22,8 @@ class CounterScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Consumer<CounterProvider>(builder: (context, counterValue, widget) {
+                Consumer<CounterProvider>(
+                    builder: (context, counterValue, widget) {
                   return Text(
                     counterValue.counter.toString(),
                     style: TextStyle(
@@ -35,7 +36,8 @@ class CounterScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Consumer<CounterProvider>(builder: (context, state, widget) {
+                    Consumer<CounterProvider>(
+                        builder: (context, state, widget) {
                       return IconButton(
                         onPressed: () {
                           state.remove();
@@ -44,11 +46,13 @@ class CounterScreen extends StatelessWidget {
                           Icons.remove,
                           color: Color(0xaaffffff),
                         ),
-                        style: IconButton.styleFrom(backgroundColor: Colors.red),
+                        style:
+                            IconButton.styleFrom(backgroundColor: Colors.red),
                       );
                     }),
                     SizedBox(width: 90),
-                    Consumer<CounterProvider>(builder: (context, state, widget) {
+                    Consumer<CounterProvider>(
+                        builder: (context, state, widget) {
                       return IconButton(
                         onPressed: () {
                           state.add();

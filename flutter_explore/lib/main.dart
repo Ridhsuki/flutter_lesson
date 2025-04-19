@@ -68,7 +68,9 @@ class _MyAppState extends State<MyApp> {
         '/user': (context) => UsersScreen(),
         '/user-detail': (context) {
           final userId = ModalRoute.of(context)!.settings.arguments as int;
-          return UserDetailScreen(userId: userId,);
+          return UserDetailScreen(
+            userId: userId,
+          );
         },
       },
     );

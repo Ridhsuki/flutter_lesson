@@ -101,9 +101,7 @@ class _Content extends StatelessWidget {
                           trailing: IconButton(
                               onPressed: () {
                                 // final noteState = state.notes[index];
-                                context
-                                    .read<TodoListCubit>()
-                                    .removeNote(index);
+                                context.read<TodoListCubit>().removeNote(index);
                               },
                               icon: Icon(
                                 Icons.delete,

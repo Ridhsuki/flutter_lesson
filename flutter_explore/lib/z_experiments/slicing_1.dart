@@ -54,7 +54,8 @@ class Slicing1 extends StatelessWidget {
                       Text(
                         'Hypebest Apes B',
                         textAlign: TextAlign.left,
-                        style: TextStyle(color: Color(0xff0C0A19), fontSize: 20),
+                        style:
+                            TextStyle(color: Color(0xff0C0A19), fontSize: 20),
                       ),
                       SizedBox(
                         height: 8,
@@ -125,8 +126,8 @@ class Slicing1 extends StatelessWidget {
                       ),
                       Text(
                         '2.23 ETH',
-                        style:
-                            TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
                       ),
                     ],
                   ),
@@ -134,7 +135,8 @@ class Slicing1 extends StatelessWidget {
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.black,
-                      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+                      padding:
+                          EdgeInsets.symmetric(vertical: 16, horizontal: 32),
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

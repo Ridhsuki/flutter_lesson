@@ -62,9 +62,11 @@ class _ContentState extends State<_Content> {
                         final data = state.usersData[index];
                         return ListTile(
                           title: Text(data.username ?? ""),
-                          subtitle: Text('${data.email ?? ""} id: ${data.id ?? ""}'),
+                          subtitle:
+                              Text('${data.email ?? ""} id: ${data.id ?? ""}'),
                           onTap: () {
-                            Navigator.pushNamed(context, '/user-detail', arguments: data.id);
+                            Navigator.pushNamed(context, '/user-detail',
+                                arguments: data.id);
                           },
                         );
                       },

@@ -1,7 +1,12 @@
 import 'package:equatable/equatable.dart';
 
 class TodoListState extends Equatable {
-  const TodoListState({this.notes = const ['Mengerjakan PR', 'Membuat Konten', 'Muroja\'ah Al-Qur\'an']});
+  const TodoListState(
+      {this.notes = const [
+        'Mengerjakan PR',
+        'Membuat Konten',
+        'Muroja\'ah Al-Qur\'an'
+      ]});
 
   final List<String> notes;
 

@@ -8,7 +8,7 @@ class ToogleScreen extends StatefulWidget {
 }
 
 class _ToogleScreenState extends State<ToogleScreen> {
-  bool isActive = true;
+  bool isActive = false;
 
   void actived() {
     setState(() {

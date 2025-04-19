@@ -16,7 +16,7 @@ class UserCubit extends Cubit<UserState> {
 
     emit(state.copyWith(isLoading: false));
   }
- 
+
   Future<void> getDetailUser(int id) async {
     emit(state.copyWith(isLoading: true));
 
@@ -28,5 +28,5 @@ class UserCubit extends Cubit<UserState> {
 
     emit(state.copyWith(isLoading: false));
   }
- 
+  
 }
