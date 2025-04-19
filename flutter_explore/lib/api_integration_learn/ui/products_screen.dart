@@ -59,7 +59,13 @@ class _Content extends StatelessWidget {
                           itemCount: state.productsData.length,
                           itemBuilder: (context, index) {
                             final data = state.productsData[index];
-                            return ListTile(title: Text(data.title.toString()));
+                            return ListTile(
+                              title: Text(data.title.toString()),
+                              onTap: () {
+                                Navigator.pushNamed(context, '/product-detail',
+                                    arguments: data.id);
+                              },
+                            );
                           })
                     ],
                   ),

@@ -16,4 +16,16 @@ class ProductCubit extends Cubit<ProductState> {
 
     emit(state.copyWith(isLoading: false));
   }
+
+  Future<void> getDetailProducts(int id) async {
+    emit(state.copyWith(isLoading: true));
+
+    var data = await ProductService().getDetailProduct(id);
+    data.fold(
+      (left) => emit(state.copyWith(error: left, isLoading: false)),
+      (right) => emit(state.copyWith(productData: right, isLoading: false)),
+    );
+
+    emit(state.copyWith(isLoading: false));
+  }
 }

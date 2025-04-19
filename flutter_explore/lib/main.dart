@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_explore/api_integration_learn/ui/product_detail_screen.dart';
 import 'package:flutter_explore/api_integration_learn/ui/products_screen.dart';
 import 'package:flutter_explore/api_integration_learn/ui/user_detail_screen.dart';
 import 'package:flutter_explore/api_integration_learn/ui/users_screen.dart';
@@ -74,6 +75,10 @@ class _MyAppState extends State<MyApp> {
           );
         },
         '/products': (context) => ProductsScreen(),
+        '/product-detail': (context) {
+          final productId = ModalRoute.of(context)!.settings.arguments as int;
+          return ProductDetailScreen(productId: productId,);
+        },
       },
     );
   }

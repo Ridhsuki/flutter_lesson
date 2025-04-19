@@ -21,4 +21,19 @@ class ProductService {
       return Left('Error: ${e.message}');
     }
   }
+
+  Future<Either<String, ProductModel>> getDetailProduct(int id) async {
+    try {
+      var response = await dio.get('https://fakestoreapi.com/products/$id');
+
+      if (response.statusCode == 200) {
+        var data = ProductModel.fromMap(response.data);
+        return Right(data);
+      } else {
+        return Left("Failed to get detail Products");
+      }
+    } on DioException catch (e) {
+      return Left('Error: ${e.message}');
+    }
+  }
 }
