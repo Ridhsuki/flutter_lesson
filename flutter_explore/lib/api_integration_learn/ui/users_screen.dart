@@ -32,40 +32,49 @@ class _ContentState extends State<_Content> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: BlocBuilder<UserCubit, UserState>(builder: (context, state) {
-          if (state.isLoading) {
-            return Center(
-              child: CircularProgressIndicator(),
-            );
-          } else if (state.error != '') {
-            return Center(
-              child: Text('Error: ${state.error}', textAlign: TextAlign.center,),
-            );
-          } else if (state.usersdata.isEmpty) {
-            return Center(
-              child: Text("No User Data"),
-            );
-          } else {
-            return SingleChildScrollView(
-              child: Column(
-                children: [
-                  ListView.separated(
-                    shrinkWrap: true,
+        child: BlocBuilder<UserCubit, UserState>(
+          builder: (context, state) {
+            if (state.isLoading) {
+              return Center(
+                child: CircularProgressIndicator(),
+              );
+            } else if (state.error != '') {
+              return Center(
+                child: Text(
+                  'Error: ${state.error}',
+                  textAlign: TextAlign.center,
+                ),
+              );
+            } else if (state.usersData.isEmpty) {
+              return Center(
+                child: Text("No User Data"),
+              );
+            } else {
+              return SingleChildScrollView(
+                child: Column(
+                  children: [
+                    ListView.separated(
+                      shrinkWrap: true,
                       separatorBuilder: (context, index) =>
                           const SizedBox(height: 14.0),
-                      itemCount: state.usersdata.length,
+                      itemCount: state.usersData.length,
                       itemBuilder: (context, index) {
-                        final data = state.usersdata[index];
+                        final data = state.usersData[index];
                         return ListTile(
                           title: Text(data.username ?? ""),
                           subtitle: Text(data.email ?? ""),
+                          onTap: () {
+                            Navigator.pushNamed(context, '/user-detail');
+                          },
                         );
-                      })
-                ],
-              ),
-            );
-          }
-        }),
+                      },
+                    )
+                  ],
+                ),
+              );
+            }
+          },
+        ),
       ),
     );
   }

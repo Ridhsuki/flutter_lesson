@@ -5,22 +5,26 @@ class UserState extends Equatable {
   const UserState(
       {this.error = '',
       this.isLoading = true,
-      this.usersdata = const []});
+      this.usersData = const [],
+      this.detailUserData = const UserModel()});
 
   final bool isLoading;
-  final List<UserModel> usersdata;
+  final List<UserModel> usersData;
+  final UserModel detailUserData;
   final String error;
 
   @override
-  List<Object> get props => [isLoading, usersdata, error];
+  List<Object> get props => [isLoading, usersData, error, detailUserData];
   UserState copyWith({
     bool? isLoading,
-    List<UserModel>? usersdata,
+    List<UserModel>? usersData,
+    UserModel? detailUserData,
     String? error,
   }) {
     return UserState(
       isLoading: isLoading ?? this.isLoading,
-      usersdata: usersdata ?? this.usersdata,
+      usersData: usersData ?? this.usersData,
+      detailUserData: detailUserData ?? this.detailUserData,
       error: error ?? this.error,
     );
   }

@@ -20,4 +20,19 @@ class UserService {
       return Left('Error: ${e.message}');
     }
   }
+
+  Future<Either<String, UserModel>> getDetailUser() async {
+    try {
+      var response = await dio.get('https://fakestoreapi.com/users/1');
+
+      if (response.statusCode == 200) {
+        var data = UserModel.fromMap(response.data);
+        return Right(data);
+      } else {
+        return Left("Failed to get user data");
+      }
+    } on DioException catch (e) {
+      return Left('Error: ${e.message}');
+    }
+  }
 }
