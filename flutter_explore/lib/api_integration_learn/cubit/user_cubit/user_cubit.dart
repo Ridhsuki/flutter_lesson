@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:flutter_explore/api_integration_learn/cubit/cubit/user_state.dart';
+import 'package:flutter_explore/api_integration_learn/cubit/user_cubit/user_state.dart';
 import 'package:flutter_explore/api_integration_learn/services/user_service.dart';
 
 class UserCubit extends Cubit<UserState> {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_explore/api_integration_learn/ui/products_screen.dart';
 import 'package:flutter_explore/api_integration_learn/ui/user_detail_screen.dart';
 import 'package:flutter_explore/api_integration_learn/ui/users_screen.dart';
 import 'package:flutter_explore/cubit_learn/ui/todo_list_cubit_screen.dart';
@@ -72,6 +73,7 @@ class _MyAppState extends State<MyApp> {
             userId: userId,
           );
         },
+        '/products': (context) => ProductsScreen(),
       },
     );
   }

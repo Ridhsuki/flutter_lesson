@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_explore/api_integration_learn/cubit/cubit/user_cubit.dart';
-import 'package:flutter_explore/api_integration_learn/cubit/cubit/user_state.dart';
+import 'package:flutter_explore/api_integration_learn/cubit/user_cubit/user_cubit.dart';
+import 'package:flutter_explore/api_integration_learn/cubit/user_cubit/user_state.dart';
 
 class UsersScreen extends StatelessWidget {
   const UsersScreen({super.key});
@@ -15,14 +15,9 @@ class UsersScreen extends StatelessWidget {
   }
 }
 
-class _Content extends StatefulWidget {
+class _Content extends StatelessWidget {
   const _Content();
 
-  @override
-  State<_Content> createState() => _ContentState();
-}
-
-class _ContentState extends State<_Content> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

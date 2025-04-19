@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_explore/api_integration_learn/cubit/cubit/user_cubit.dart';
-import 'package:flutter_explore/api_integration_learn/cubit/cubit/user_state.dart';
+import 'package:flutter_explore/api_integration_learn/cubit/user_cubit/user_cubit.dart';
+import 'package:flutter_explore/api_integration_learn/cubit/user_cubit/user_state.dart';
 
 class UserDetailScreen extends StatelessWidget {
   final int userId;
