@@ -5,7 +5,7 @@ import 'package:equatable/equatable.dart';
 import 'address.dart';
 import 'name.dart';
 
-class User extends Equatable {
+class UserModel extends Equatable {
 	final Address? address;
 	final int? id;
 	final String? email;
@@ -15,7 +15,7 @@ class User extends Equatable {
 	final String? phone;
 	final int? v;
 
-	const User({
+	const UserModel({
 		this.address, 
 		this.id, 
 		this.email, 
@@ -26,7 +26,7 @@ class User extends Equatable {
 		this.v, 
 	});
 
-	factory User.fromMap(Map<String, dynamic> data) => User(
+	factory UserModel.fromMap(Map<String, dynamic> data) => UserModel(
 				address: data['address'] == null
 						? null
 						: Address.fromMap(data['address'] as Map<String, dynamic>),
@@ -54,16 +54,16 @@ class User extends Equatable {
 
   /// `dart:convert`
   ///
-  /// Parses the string and returns the resulting Json object as [User].
-	factory User.fromJson(String data) {
-		return User.fromMap(json.decode(data) as Map<String, dynamic>);
+  /// Parses the string and returns the resulting Json object as [UserModel].
+	factory UserModel.fromJson(String data) {
+		return UserModel.fromMap(json.decode(data) as Map<String, dynamic>);
 	}
   /// `dart:convert`
   ///
-  /// Converts [User] to a JSON string.
+  /// Converts [UserModel] to a JSON string.
 	String toJson() => json.encode(toMap());
 
-	User copyWith({
+	UserModel copyWith({
 		Address? address,
 		int? id,
 		String? email,
@@ -73,7 +73,7 @@ class User extends Equatable {
 		String? phone,
 		int? v,
 	}) {
-		return User(
+		return UserModel(
 			address: address ?? this.address,
 			id: id ?? this.id,
 			email: email ?? this.email,
